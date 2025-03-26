@@ -31,8 +31,12 @@
 
 <img src="https://ecmel.gallerycdn.vsassets.io/extensions/ecmel/vscode-html-css/2.0.13/1737702889132/Microsoft.VisualStudio.Services.Icons.Default" alt="html-css" width="100" height="100">
 
-</br>
-</br>
-</br>
+<hr/>
 
 # 강의 Ep02 - HTML이란 무엇인가?
+
+## HTML이란?
+
+- HTML 은 Hyper Text Markup Language 인데 여기서 Hyper 라는 사전적 의미는 최고의, 과도한 이라는 뜻으로 일반적인 문서보다 최고의 기능을 담고 있는 문서라고 보면 된다
+
+- 그 기능 중에 대표적인 기능이 바로 Hyper Link 라는 기능인데 이 기능은 텍스트를 클릭하면 링크된 다른 웹 문서로 이동하는 문서 연결 기능이다
