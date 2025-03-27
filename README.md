@@ -93,15 +93,11 @@
   </ul>
 </div>
 
-<hr />
-
 <div>
   <ul></ul>
   <ol></ol>
   <div></div>
 </div>
-
-<hr />
 
 <div>
   <ul>
@@ -111,22 +107,28 @@
   </ul>
 </div>
 
-<hr />
-
 <span class="title"></span>
 <div class="title"></div>
 
-<hr />
-
 <p class="container">Hello world~!</p>
-
-<hr />
 
 <p class="container">item1</p>
 <p class="container">item2</p>
 <p class="container">item3</p>
 <p class="container">item4</p>
 <p class="container">item5</p>
-
-<hr />
 ```
+
+<br/>
+<hr/>
+
+## width, height
+
+`.item{h100+w100} 입력 후 Tab키` width, height를 지정할 수 있다
+기본값은 px 단위이며 단위를 교체하는 것도 가능하다
+
+- 기본값 → px
+- p → %
+- e → em
+- x → ex
+- r → rem
