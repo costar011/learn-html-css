@@ -7,8 +7,49 @@
   </head>
   <body>
     <form action="">
-      <input type="text" />
-      <input type="text" />
+      <fieldset>
+        <legend>Input Tag</legend>
+        <ul>
+          <li>
+            <label for="text">Text</label>
+            <input for="text" id="text" required />
+          </li>
+
+          <li>
+            <label for="email">이메일</label>
+            <input for="email" id="email" required />
+          </li>
+
+          <li>
+            <label for="tel">전화번호</label>
+            <input for="tel" id="tel" required />
+          </li>
+
+          <li>
+            <label for="url">url</label>
+            <input for="url" id="url" required />
+          </li>
+
+          <li>
+            <label for="number">number</label>
+            <input for="number" id="number" required min="5" max="10" />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>날짜 관련</legend>
+        <ul>
+          <li>
+            <label for="date">날짜</label>
+            <input for="date" id="date" required />
+          </li>
+          <li>
+            <label for="month">month</label>
+            <input for="month" id="month" required />
+          </li>
+        </ul>
+      </fieldset>
+      <input type="submit" value="제출하기" />
     </form>
   </body>
 </html>
