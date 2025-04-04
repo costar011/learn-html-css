@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radio&Checkbox</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>색상 선택</legend>
+        <ul>
+          <li>
+            <label for="blue">파랑</label>
+            <input type="checkbox" id="blue" value="blue" />
+          </li>
+          <li>
+            <label for="black">검은색</label>
+            <input type="checkbox" id="black" value="black" />
+          </li>
+          <li>
+            <label for="yellow">노랑</label>
+            <input type="checkbox" id="yellow" value="yellow" />
+          </li>
+          <li>
+            <label for="skyblue">하늘색</label>
+            <input type="checkbox" id="skyblue" value="skyblue" />
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>배송방법</legend>
+        <ul>
+          <li>
+            <label for="free">무료</label>
+            <input type="radio" name="delivery" id="free" value="free" />
+          </li>
+          <li>
+            <label for="pay">유료</label>
+            <input type="radio" name="delivery" id="pay" value="pay" />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>자기소개서</legend>
+        <textarea name="" id="" cols="150" rows="5"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>주문상품</legend>
+        <ul>
+          <li>
+            <!-- multiple 다중 선택 , -->
+            <select name="goods" id="goods" multiple>
+              <option value="apple_10kg">사과10kg</option>
+              <option value="apple_20kg">사과20kg</option>
+              <option value="apple_30kg">사과30kg</option>
+              <option value="apple_40kg" selected>사과40kg</option>
+              <option value="apple_50kg">사과50kg</option>
+            </select>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+  </body>
+</html>
