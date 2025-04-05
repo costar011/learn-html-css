@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font Style 1</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      html {
+        /* serif 서체가 적용안될 시 monospace 서체를 적용
+            font-family: serif, monospace; */
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 16px;
+      }
+
+      .title {
+        font-size: 28px;
+      }
+
+      .content {
+        font-size: 18px;
+      }
+
+      .font-italic {
+        font-style: italic;
+      }
+
+      .font-weight-bold {
+        font-weight: bold;
+      }
+
+      .font-weight-400 {
+        font-weight: 500;
+      }
+
+      .font-variant {
+        font-variant: small-caps;
+      }
+
+      .rectangle.width {
+        width: 20vw;
+        height: 100px;
+        background-color: yellow;
+      }
+
+      .rectangle.height {
+        height: 20vh;
+        width: 100px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="title">costar011</h2>
+    <p class="content font-italic">코딩</p>
+    <p class="content font-weight-bold">실용적 코딩</p>
+    <p class="content font-weight-400">실용적인 코딩</p>
+    <p class="content font-variant">진짜 실용적인 코딩</p>
+    <p class="content">코딩테스트</p>
+    <hr />
+    <h2>px</h2>
+    <p style="font-size: 20px">반갑습니다</p>
+    <hr />
+    <h2>rem</h2>
+    <!-- root 요소 글꼴 크기의 2배 -->
+    <p style="font-size: 2rem">반갑다</p>
+    <hr />
+    <h2>em</h2>
+    <!-- 바로 상위 요소 글꼴 크기의 2배 -->
+    <div style="font-size: 10px">
+      <p style="font-size: 2em">반갑다</p>
+    </div>
+    <hr />
+    <h2 class="rectangle width">vw</h2>
+    <hr />
+    <h2 class="rectangle height">vh</h2>
+    <div></div>
+  </body>
+</html>
