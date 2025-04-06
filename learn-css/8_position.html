@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      main,
+      section,
+      article,
+      div {
+        border: 1px solid black;
+        padding: 10px;
+      }
+      main {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: beige;
+      }
+
+      section {
+        background-color: lightblue;
+      }
+
+      article {
+        background-color: lightgreen;
+      }
+
+      div {
+        background-color: lightcoral;
+      }
+
+      div.relative {
+        position: relative;
+        top: 10px;
+      }
+      div.absolute {
+        position: absolute;
+        background-color: mediumblue;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      main
+      <section>
+        section
+        <article>
+          article
+          <div>static</div>
+          <div class="relative">relative</div>
+          <div class="absolute">absolute</div>
+          <div>fixed</div>
+          <div>sticky</div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
