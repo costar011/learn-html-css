@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0" />
+    <title>Table</title>
+
+    <style>
+      #movies {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      #movies td,
+      #movies th {
+        border: 1px solid #2f2f2f;
+        padding: 8px;
+      }
+
+      #movies th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: green;
+        color: white;
+      }
+
+      #movies tr:nth-child(even) {
+        background-color: rgb(234, 218, 218);
+      }
+
+      #movies tr:hover {
+        background-color: rgb(35, 183, 233);
+      }
+    </style>
+  </head>
+  <body>
+    <table id="movies">
+      <tr>
+        <th>영화</th>
+        <th>상영시간</th>
+        <th>개봉</th>
+      </tr>
+      <tr>
+        <td>무비</td>
+        <td>200분</td>
+        <td>2023.08.17</td>
+      </tr>
+      <tr>
+        <td>위도우</td>
+        <td>70분</td>
+        <td>2023.02.03</td>
+      </tr>
+      <tr>
+        <td>디즈니</td>
+        <td>120분</td>
+        <td>2023.12.05</td>
+      </tr>
+      <tr>
+        <td>캡틴</td>
+        <td>150분</td>
+        <td>2023.03.15</td>
+      </tr>
+      <tr>
+        <td>보스베이비</td>
+        <td>180분</td>
+        <td>2023.04.12</td>
+      </tr>
+      <tr>
+        <td>코난</td>
+        <td>60분</td>
+        <td>2023.06.03</td>
+      </tr>
+    </table>
+  </body>
+</html>
