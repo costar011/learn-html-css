@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      div {
+        background-color: rgb(208, 208, 208);
+        width: 200px;
+        height: 200px;
+        padding: 20;
+        border: 10px solid black;
+        margin: 40px;
+      }
+
+      span {
+        border: 1px solid rebeccapurple;
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+      }
+
+      div.padding {
+        border: 1px solid red;
+        padding: 20px 10px;
+      }
+
+      div.margin {
+        border: 1px solid blue;
+        margin-left: 20px;
+      }
+      .shape {
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content"></div>
+    <span>Hello</span>
+    <div class="padding">
+      반쯤 볶아진 스팸에 밥을 비롯한 재료들을 다 넣고 수저로 섞는다
+    </div>
+    <div class="margin">
+      반쯤 볶아진 스팸에 밥을 비롯한 재료들을 다 넣고 수저로 섞는다
+    </div>
+    <span
+      style="
+        border: 1px solid black;
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+      "
+      >HIHIHIHIHIHIHI
+    </span>
+  </body>
+</html>
