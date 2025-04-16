@@ -1051,3 +1051,141 @@ type
 ```
 
 ---
+
+# **Ep01 - CSS란 무엇인가?**
+
+## CSS 적용 방법
+
+- 인라인 스타일 - Inline Style Sheet
+- 내부 스타일 - Internal Style Sheet
+- 외부 스타일 - External Style Sheet
+
+## 인라인 스타일 - Inline Style Sheet
+
+스타일을 정의하고 싶은 HTML 요소에 스타일을 적용
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline Style</title>
+  </head>
+  <body>
+    <h1 style="color: blue">제목</h1>
+    <div style="width: 100px; height: 100px; border: 1px solid red"></div>
+  </body>
+</html>
+```
+
+## 내부 스타일 - Internal Style Sheet
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internal Style</title>
+    <style>
+      h1 {
+        color: blue;
+      }
+      .content {
+        border: 2px solid red;
+        background-color: yellow;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>헬스</h1>
+    <p class="content">오늘은 헬스장에서 운동을 합니다</p>
+  </body>
+</html>
+```
+
+## 외부 스타일 - External Style Sheet
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>External Style</title>
+    <link rel="Stylesheet" href="./style.css" />
+    <style>
+      * {
+        color: yellowgreen !important;
+      }
+      a {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>코딩</h1>
+    <p class="article">코딩 배우는 중</p>
+    <a href="#">네이버</a>
+  </body>
+</html>
+```
+
+## CSS 주석
+
+주석은 StyleSheet 내에 메모를 남기는 것
+
+- 사용법 - `/* 메모 내용 */` 메모내용란에 메모할 문자를 작성함
+
+```css
+/*  제목과 안쪽 내용 스타일 */
+h1 {
+  color: blue;
+}
+.article {
+  border: 1px solid black;
+  padding: 30px;
+}
+```
+
+- VScode 에서 주석 단축키는 `Ctrl + /` 이다
+
+## CSS 출처
+
+---
+
+CSS는 `브라우저 기본 스타일` , `브라우저 사용자 스타일` , 우리가 만든 `제작자 스타일` 로 분류 할 수 있음
+
+## CSS 출처 3가지
+
+- 제작자 스타일 ( Author Style )
+  제작자 스타일은 말 그대로 웹 사이트를 제작하는 `우리가 작성한 스타일 시트` 를 말함
+- 사용자 스타일 (User Style)
+  사이트를 방문하는 일반 사용자들이 구성한 스타일 시트를 의미
+  예를들어 저시력자는 글자를 명확히 읽기 위해 윈도우의 “고대비” 설정 기능을 사용할 수 있음
+  그러한 스타일이 시스템에 저장되게 되는데 이것이 `사용자 스타일 시트` 를 말함
+- 브라우저 스타일 (Browser Style)
+  `브라우저` 들 마다 기본적으로 지정하고 있는 `스타일` 이다
+  크롬, 사파리, 파이어폭스 등 브라우저 마다 기본 스타일 시트가 다를 수 있음
+
+## CSS 출처 적용 우선순위
+
+`사용자 !important` > `제작자 !important` > `제작자` > `사용자` > `브라우저`
+
+- 주의사항
+
+`!important는 폭포의 흐름을 깰 수 있으니` 주의해서 사용해야 함
+
+## Cascading 뜻
+
+Cascading Style Sheet 에서 Cascading은 폭포라는 뜻을 갖고있음
+
+HTML 문서는
+
+- 제작자 스타일을 우선 적용 →
+  - 그 다음 브라우저 사용자 스타일 →
+    - 마지막으로 브라우저 기본 스타일 적용
+
+이처럼 Cascading의 뜻인 폭포와 같이 스타일이 우선순위에 맞게 **연속적으로 적용됨**을 의미
