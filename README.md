@@ -1038,12 +1038,16 @@ type
 
 ## 기본적으로 웹에 설정해줘야하는 og 메타태그
 
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://example.com/page.html">
-<meta property="og:title" content="Content Title">
-<meta property="og:image" content="https://example.com/image.jpg">
-<meta property="og:description" content="Description here">
-<meta property="og:site_name" content="en_US">
+```html
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://example.com/page.html" />
+<meta property="og:title" content="Content Title" />
+<meta property="og:image" content="https://example.com/image.jpg" />
+<meta property="og:description" content="Description here" />
+<meta property="og:site_name" content="en_US" />
 <!-- 다음의 태그는 필수는 아니지만 포함하는 것을 추천함 -->
-<meta property="og:image:width" content="120">
-<meta property="og:image:height" content="630">
+<meta property="og:image:width" content="120" />
+<meta property="og:image:height" content="630" />
+```
+
+---
